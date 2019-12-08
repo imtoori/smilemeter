@@ -20,6 +20,5 @@ The idea is to put a person in the exit way and get feedbacks from the public li
 
 ### Screenshots
 
-![home](https://github.com/imtoori/smilemeter/blob/master/flutter_01.png)
-
-![voting](https://github.com/imtoori/smilemeter/blob/master/flutter_02.png)
+<img src='https://github.com/imtoori/smilemeter/blob/master/flutter_01.png' height='420'>
+<img src='https://github.com/imtoori/smilemeter/blob/master/flutter_02.png' height='420'>
