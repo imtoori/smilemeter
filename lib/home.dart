@@ -76,6 +76,14 @@ class Home extends StatelessWidget {
     );
   }
 
+  final emoticons = [
+    '😫',
+    '☹',
+    '😐',
+    '🙂',
+    '😄',
+  ];
+
   ListView _buildListView(
       AsyncSnapshot<QuerySnapshot> snapshot, BuildContext context) {
     return ListView(
@@ -83,7 +91,7 @@ class Home extends StatelessWidget {
           .map((doc) => Survey.fromSnapshot(doc))
           .map((survey) => ListTile(
                 title: Text(survey.name),
-                trailing: Text(survey.average.toStringAsFixed(2)),
+                trailing: Text('${survey.average.toStringAsFixed(2)} ${emoticons[survey.average.round() - 1]}'),
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return SurveyPage(survey: survey);

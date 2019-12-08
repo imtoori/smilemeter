@@ -1,16 +1,25 @@
 # smilemeter
 
-A new Flutter project.
+A Flutter project to take surveys of talks using emoticons 😀.
+
+The idea is to put a person in the exit way and get feedbacks from the public living the room.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- Clone the repo `git clone git@github.com:imtoori/smilemeter.git`
 
-A few resources to get you started if this is your first Flutter project:
+- Cd into the project `cd smilemeter`
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Get the dependencies `flutter packages get`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Create a new Firebase project and configure Android and iOS apps (https://firebase.google.com/docs/flutter/setup?platform=android)
+
+- Enable Firebase Firestore in your project using **test mode**
+
+- Run the app `flutter run`
+
+### Screenshots
+
+![home](https://github.com/imtoori/smilemeter/blob/master/flutter_01.png)
+
+![voting](https://github.com/imtoori/smilemeter/blob/master/flutter_02.png)

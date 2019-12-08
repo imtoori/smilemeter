@@ -23,35 +23,35 @@ class SurveyPage extends StatelessWidget {
                 angle: pi / 2,
                 child: Text('😫'),
               ),
-              onPressed: () => vote(-2),
+              onPressed: () => vote(1),
             ),
             MaterialButton(
               child: Transform.rotate(
                 angle: pi / 2,
                 child: Text('☹'),
               ),
-              onPressed: () => vote(-1),
+              onPressed: () => vote(2),
             ),
             MaterialButton(
               child: Transform.rotate(
                 angle: pi / 2,
                 child: Text('😐'),
               ),
-              onPressed: () => vote(0),
+              onPressed: () => vote(3),
             ),
             MaterialButton(
               child: Transform.rotate(
                 angle: pi / 2,
                 child: Text('🙂'),
               ),
-              onPressed: () => vote(1),
+              onPressed: () => vote(4),
             ),
             MaterialButton(
               child: Transform.rotate(
                 angle: pi / 2,
                 child: Text('😄'),
               ),
-              onPressed: () => vote(2),
+              onPressed: () => vote(5),
             ),
           ],
         ),
