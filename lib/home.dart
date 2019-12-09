@@ -77,6 +77,7 @@ class Home extends StatelessWidget {
   }
 
   final emoticons = [
+    '',
     '😫',
     '☹',
     '😐',
@@ -91,7 +92,7 @@ class Home extends StatelessWidget {
           .map((doc) => Survey.fromSnapshot(doc))
           .map((survey) => ListTile(
                 title: Text(survey.name),
-                trailing: Text('${survey.average.toStringAsFixed(2)} ${emoticons[survey.average.round() - 1]}'),
+                trailing: Text('${survey.average.toStringAsFixed(2)} ${emoticons[survey.average.round()]}'),
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return SurveyPage(survey: survey);
