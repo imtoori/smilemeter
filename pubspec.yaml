@@ -23,7 +23,16 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  cloud_firestore: ^0.12.10
+  cloud_firestore:
+    git: 
+      url: git@github.com:andrea689/flutterfire.git
+      ref: federated_cloud_firestore_platform_interface
+      path: packages/cloud_firestore/cloud_firestore
+  cloud_firestore_web: 
+    git: 
+      url: git@github.com:andrea689/flutterfire.git
+      ref: federated_cloud_firestore_platform_interface
+      path: packages/cloud_firestore/cloud_firestore_web
 
 dev_dependencies:
   flutter_test:

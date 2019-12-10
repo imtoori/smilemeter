@@ -79,7 +79,7 @@ class Home extends StatelessWidget {
   final emoticons = [
     '',
     '😫',
-    '☹',
+    '🙁',
     '😐',
     '🙂',
     '😄',
