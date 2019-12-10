@@ -15,45 +15,48 @@ class SurveyPage extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(16),
         color: Colors.white,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            MaterialButton(
-              child: Transform.rotate(
-                angle: pi / 2,
-                child: Text('😫'),
+        child: Transform.rotate(
+          angle: MediaQuery.of(context).size.width > 680 ? - pi / 2 : 0,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              MaterialButton(
+                child: Transform.rotate(
+                  angle: pi / 2,
+                  child: Text('😫'),
+                ),
+                onPressed: () => vote(1),
               ),
-              onPressed: () => vote(1),
-            ),
-            MaterialButton(
-              child: Transform.rotate(
-                angle: pi / 2,
-                child: Text('☹'),
+              MaterialButton(
+                child: Transform.rotate(
+                  angle: pi / 2,
+                  child: Text('🙁'),
+                ),
+                onPressed: () => vote(2),
               ),
-              onPressed: () => vote(2),
-            ),
-            MaterialButton(
-              child: Transform.rotate(
-                angle: pi / 2,
-                child: Text('😐'),
+              MaterialButton(
+                child: Transform.rotate(
+                  angle: pi / 2,
+                  child: Text('😐'),
+                ),
+                onPressed: () => vote(3),
               ),
-              onPressed: () => vote(3),
-            ),
-            MaterialButton(
-              child: Transform.rotate(
-                angle: pi / 2,
-                child: Text('🙂'),
+              MaterialButton(
+                child: Transform.rotate(
+                  angle: pi / 2,
+                  child: Text('🙂'),
+                ),
+                onPressed: () => vote(4),
               ),
-              onPressed: () => vote(4),
-            ),
-            MaterialButton(
-              child: Transform.rotate(
-                angle: pi / 2,
-                child: Text('😄'),
+              MaterialButton(
+                child: Transform.rotate(
+                  angle: pi / 2,
+                  child: Text('😄'),
+                ),
+                onPressed: () => vote(5),
               ),
-              onPressed: () => vote(5),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
